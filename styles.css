@@ -1,0 +1,114 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4a90e2, #56ccf2);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.week-selector {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    background-color: #4a90e2;
+    color: white;
+}
+
+.week {
+    display: none;
+}
+
+.day-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.day-card h2 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.exercise {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    padding: 10px;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Button styles */
+.button {
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.start-button {
+    background-color: #4caf50;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}
+
+.done-button {
+    background-color: #f44336;
+}
+
+.done-button:hover {
+    background-color: #e41f2b;
+}
+
+.day-complete {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.day-complete .complete-button {
+    background-color: #ff9800;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.completed-day {
+    color: #4caf50;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    display: none;
+}
