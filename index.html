@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Pull-Up Training Plan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Home Pull-Up Training Plan</h1>
+
+    <!-- Week Selector -->
+    <div class="week-selector">
+        <label for="week">Select Week:</label>
+        <select id="week" onchange="showWeek(this.value)">
+            <option value="week-1-2">Week 1-2</option>
+            <option value="week-3-4">Week 3-4</option>
+            <option value="week-5-plus">Week 5+</option>
+        </select>
+    </div>
+
+    <!-- Week 1-2 -->
+    <div id="week-1-2" class="week">
+        <!-- Example of Day 1 -->
+        <div class="day-card">
+            <h2>Day 1: Pull-Up Prep</h2>
+            <div class="exercise">
+                <p>Assisted Pull-Ups (3x8-10)</p>
+                <button class="button start-button" onclick="toggleButton(this)">Start</button>
+                <button class="button done-button" onclick="toggleButton(this)">Done</button>
+            </div>
+            <div class="exercise">
+                <p>Negative Pull-Ups (3x5, 5 sec descent)</p>
+                <button class="button start-button" onclick="toggleButton(this)">Start</button>
+                <button class="button done-button" onclick="toggleButton(this)">Done</button>
+            </div>
+            <div class="exercise">
+                <p>Bodyweight Rows (3x10-12)</p>
+                <button class="button start-button" onclick="toggleButton(this)">Start</button>
+                <button class="button done-button" onclick="toggleButton(this)">Done</button>
+            </div>
+            <div class="exercise">
+                <p>Plank (3x30-45 sec)</p>
+                <button class="button start-button" onclick="toggleButton(this)">Start</button>
+                <button class="button done-button" onclick="toggleButton(this)">Done</button>
+            </div>
+            <div class="day-complete">
+                <button class="button complete-button" onclick="markDayComplete(this)">Mark Day as Completed</button>
+                <p class="completed-day">Day Completed!</p>
+            </div>
+        </div>
+        <!-- Add similar blocks for the rest of Week 1-2 days -->
+    </div>
+
+    <!-- Week 3-4 -->
+    <div id="week-3-4" class="week">
+        <div class="day-card">
+            <h2>Day 1: Pull-Up Strength</h2>
+            <div class="exercise">
+                <p>Australian Pull-Ups (4x10-12)</p>
+                <button class="button start-button" onclick="toggleButton(this)">Start</button>
+                <button class="button done-button" onclick="toggleButton(this)">Done</button>
+            </div>
+            <div class="exercise">
+                <p>Negative Pull-Ups (4x5, 5-10 sec descent)</p>
+                <button class="button start-button" onclick="toggleButton(this)">Start</button>
+                <button class="button done-button" onclick="toggleButton(this)">Done</button>
+            </div>
+            <div class="exercise">
+                <p>Isometric Hold at Top (3 sets, max time)</p>
+                <button class="button start-button" onclick="toggleButton(this)">Start</button>
+                <button class="button done-button" onclick="toggleButton(this)">Done</button>
+            </div>
+            <div class="day-complete">
+                <button class="button complete-button" onclick="markDayComplete(this)">Mark Day as Completed</button>
+                <p class="completed-day">Day Completed!</p>
+            </div>
+        </div>
+
+        <!-- Add similar blocks for the rest of Week 3-4 days -->
+    </div>
+
+    <!-- Week 5+ -->
+    <div id="week-5-plus" class="week">
+        <div class="day-card">
+            <h2>Day 1: Full Pull-Up Attempt</h2>
+            <div class="exercise">
+                <p>Unassisted Pull-Ups (1-2 reps, as many sets until 10 reps total)</p>
+                <button class="button start-button" onclick="toggleButton(this)">Start</button>
+                <button class="button done-button" onclick="toggleButton(this)">Done</button>
+            </div>
+            <div class="exercise">
+                <p>Rest-Pause Sets (5 reps total)</p>
+                <button class="button start-button" onclick="toggleButton(this)">Start</button>
+                <button class="button done-button" onclick="toggleButton(this)">Done</button>
+            </div>
+            <div class="exercise">
+                <p>Negative Pull-Ups (3x5)</p>
+                <button class="button start-button" onclick="toggleButton(this)">Start</button>
+                <button class="button done-button" onclick="toggleButton(this)">Done</button>
+            </div>
+            <div class="exercise">
+                <p>Reverse Crunches (3x10-12)</p>
+                <button class="button start-button" onclick="toggleButton(this)">Start</button>
+                <button class="button done-button" onclick="toggleButton(this)">Done</button>
+            </div>
+            <div class="day-complete">
+                <button class="button complete-button" onclick="markDayComplete(this)">Mark Day as Completed</button>
+                <p class="completed-day">Day Completed!</p>
+            </div>
+        </div>
+
+        <!-- Add similar blocks for the rest of Week 5+ days -->
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
